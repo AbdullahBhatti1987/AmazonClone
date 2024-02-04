@@ -1,0 +1,760 @@
+:root {
+  --bgorange: #f3a847;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #e3e6e6;
+}
+header div.logo {
+  width: 150px;
+}
+header,
+header .navbar {
+  padding: 0px;
+}
+header div.container-fluid {
+  background-color: black;
+  margin: 0px;
+  height: 60px !important;
+}
+header .navbar {
+  background-color: black;
+  margin: 0px;
+  align-items: center;
+}
+header div.container-fluid a.navbar-brand img {
+  width: 120px;
+  padding: 10px;
+  margin-right: 0px !important;
+}
+header div.container-fluid a.navbar-brand img:hover {
+  width: 100px;
+  border: 1px solid white;
+}
+
+#delivery {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+div.smallscreen {
+  display: none;
+}
+#delivery:hover {
+  border: 1px solid white;
+}
+#delivery div i {
+  color: white;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: end;
+  margin-right: 5px;
+  font-size: 15px;
+}
+#delivery div span {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 13px;
+}
+#delivery div span:last-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header ul.navbar-nav li.nav-item > a {
+  color: white !important;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+#account {
+  display: flex;
+  align-items: center;
+}
+#account a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 12px;
+}
+#account a span {
+  font-size: 12px !important;
+  margin: 0px;
+}
+#account br {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+#account a span:last-child {
+  font-weight: bold;
+}
+#cart {
+  font-size: 26px;
+  padding: 10px;
+}
+.fblack {
+  color: black !important;
+}
+.fsmall {
+  font-size: 12px !important;
+}
+
+.square {
+  border-start-end-radius: 0px !important;
+  border-end-end-radius: 0px !important;
+  background-color: #e6e6e6 !important;
+  color: gray !important;
+  font-size: 12px !important;
+  height: 100% !important;
+  margin: 0px !important;
+  border: none !important;
+}
+.wborder:hover {
+  border: 1px solid white !important;
+}
+a {
+  text-decoration: none !important;
+}
+#allsearch {
+  max-width: 850px;
+  margin: 10px 20px;
+}
+#flag {
+  width: 20px;
+  margin-right: 5px;
+}
+#account a:hover {
+  border: 1px solid white !important;
+}
+
+/* ------------------Top-Header-End--------- */
+
+/* ----------------Header2------------- */
+div.header2 {
+  background-color: #232f3e;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+div.header2 > a.btn {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+div.header2 #bar {
+  color: white;
+  font-size: 15px;
+  padding-right: 5px;
+}
+div.header2 #leftbar {
+  background-color: #232f3e;
+  color: white;
+  width: 100%;
+  margin: 0px !important;
+  padding-left: 30px;
+  padding: 7px 7px 7px 30px;
+}
+div.header2 #leftbar i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+div.header2 .offcanvas-header {
+  width: 100%;
+  padding: 0px;
+}
+div.header2 #closebtn {
+  position: absolute;
+  right: -30px;
+  background-color: white;
+}
+div.header2 div.offcanvas-body {
+  padding-left: 30px;
+}
+div.header2 div.offcanvas-body ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+div.header2 div.offcanvas-body ul li {
+  padding: 7px 0px;
+}
+
+div.header2 > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+div.header2 ul li a:first-child {
+  border-radius: 0px;
+  margin-left: 10px;
+}
+div.header2 > ul > li > a {
+  color: white;
+  background-color: transparent !important;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+}
+div.header2 > ul > li > a:hover {
+  border: 1px solid white;
+}
+/* -------------Main Container Start----------- */
+div.main {
+  margin: 0px 8px;
+  height: 300px;
+  position: relative;
+}
+div.content {
+  width: 100%;
+  gap: 1%;
+  padding: 20px;
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e6e6;
+  z-index: 1;
+}
+div.content div.heading {
+  padding: 10px 0px;
+}
+div.content div.products {
+  display: flex;
+  height: 100%;
+  flex-flow: column wrap;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  width: 24%;
+  margin: 10px 0px;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+div.content div.items4 {
+  width: 24%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  align-items: stretch;
+  margin: 10px 0px;
+  justify-content: stretch;
+  /* height: 100%; */
+}
+div.content div.items4 div.items2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+div.content div.items4 div.items2 img {
+  width: 100%;
+  align-items: stretch;
+}
+div.content div.items4 div.inside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px 10px;
+}
+div.content a {
+  margin-top: 20px;
+}
+div.content div.products img {
+  width: 100%;
+}
+/* ------------Existing products------------- */
+
+div.existing {
+  width: 100%;
+  background-color: #e3e6e6;
+  padding: 10px 20px;
+}
+div.existing div.ex-products {
+  gap: 1%;
+  padding: 20px;
+  align-items: stretch;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+div.existing div.ex-products h3 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+div.existing div.ex-products img {
+  margin: 10px 20px;
+}
+
+div.existing2 div.ex-products {
+  flex-direction: row-reverse;
+}
+
+div.signin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+div.signin span {
+  margin: 10px 0px;
+}
+
+div.signin input {
+  width: 300px;
+  border-radius: 7px;
+  background-color: #ffc73a;
+  font-weight: bold;
+  border: 1px solid gray;
+}
+
+div.back {
+  width: 100%;
+  background-color: #37475a;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.back a {
+  width: 100%;
+  color: white;
+  background-color: #37475a;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #232f3e;
+  width: 100%;
+  padding: 50px 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer div.listing {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+}
+
+footer div.listing h4 {
+  color: white;
+}
+footer div.listing ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer div.listing ul li {
+  margin: 10px 0px;
+}
+footer div.listing ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer div.listing ul li a:hover {
+  text-decoration: underline !important;
+}
+
+div.footer {
+  background-color: #131a22;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 20%;
+  justify-content: space-evenly;
+}
+
+div.footer div.line {
+  display: flex;
+  flex-direction: column;
+}
+div.footer div.line div.last {
+  display: flex;
+  flex-direction: column;
+}
+div.footer div.line div.last h6 {
+  color: white;
+  font-size: 12px;
+}
+div.footer div.line div.last ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  width: 70px;
+  margin-bottom: 20px;
+}
+div.footer div.line div.last ul li {
+  line-height: 10px;
+}
+div.footer div.line div.last ul li a {
+  color: gray;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 425px) {
+
+    div.collapse{
+        display: flex!important;
+        color: white;
+        justify-content: flex-end;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 99;
+    }
+    #language{
+        position: absolute!important;
+        top: 0px;
+        right: 50px;
+    }
+#cart{
+    display: flex!important;
+    position: absolute;
+    right: -50px!important;
+    top: 0px!important;
+}
+  header div.logo {
+    width: 100px;
+  }
+  header div.container-fluid {
+    background-color: black;
+    margin: 0px;
+    height: 150px !important;
+  }
+  header .navbar {
+    background-color: black;
+    margin: 0px;
+    align-items: center;
+  }
+  header div.container-fluid a.navbar-brand img {
+    width: 120px;
+    padding: 10px;
+    margin-right: 0px !important;
+  }
+  header div.container-fluid a.navbar-brand img:hover {
+    width: 100px;
+    border: 1px solid white;
+  }
+  div.smallscreen {
+    display: flex;
+    background-color: #37475a;
+    z-index: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+  }
+  #delivery {
+    display: none;
+  }
+  div.smallscreen a:hover {
+    border: 1px solid white;
+  }
+  div.smallscreen a {
+    color: white;
+  }
+  div.smallscreen a div i {
+    color: white !important;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: end;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  div.smallscreen a div span {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 13px;
+  }
+  div.smallscreen a div span:last-child {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  header ul.navbar-nav li.nav-item > a {
+    color: white !important;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #account {
+    display: flex;
+    align-items: center;
+  }
+  #account a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 12px;
+  }
+  #account a span {
+    font-size: 12px !important;
+    margin: 0px;
+  }
+  #account br {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  #account a span:last-child {
+    font-weight: bold;
+  }
+  #cart {
+    font-size: 26px;
+    padding: 10px;
+  }
+  .fblack {
+    color: black !important;
+  }
+  .fsmall {
+    font-size: 12px !important;
+  }
+
+  .square {
+    border-start-end-radius: 0px !important;
+    border-end-end-radius: 0px !important;
+    background-color: #e6e6e6 !important;
+    color: gray !important;
+    font-size: 12px !important;
+    height: 100% !important;
+    margin: 0px !important;
+    border: none !important;
+  }
+  .wborder:hover {
+    border: 1px solid white !important;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  #allsearch {
+    max-width: 850px;
+    margin: 10px 20px;
+  }
+  #flag {
+    width: 20px;
+    margin-right: 5px;
+  }
+  #account a:hover {
+    border: 1px solid white !important;
+  }
+
+  /* ------------------Top-Header-End--------- */
+
+  /* ----------------Header2------------- */
+  div.header2 {
+    background-color: #232f3e;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  div.header2 > a.btn {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    /* position: absolute; */
+    top: 0px;
+  }
+  div.header2 #bar {
+    color: white;
+    font-size: 15px;
+    padding-right: 5px;
+  }
+  div.header2 #leftbar {
+    background-color: #232f3e;
+    color: white;
+    width: 100%;
+    margin: 0px !important;
+    padding-left: 30px;
+    padding: 7px 7px 7px 30px;
+  }
+  div.header2 #leftbar i {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  div.header2 .offcanvas-header {
+    width: 100%;
+    padding: 0px;
+  }
+  div.header2 #closebtn {
+    position: absolute;
+    right: -30px;
+    background-color: white;
+  }
+  div.header2 div.offcanvas-body {
+    padding-left: 30px;
+  }
+  div.header2 div.offcanvas-body ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  div.header2 div.offcanvas-body ul li {
+    padding: 7px 0px;
+  }
+
+  div.header2 > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+  }
+  div.header2 ul li a:first-child {
+    border-radius: 0px;
+    margin-left: 10px;
+  }
+  div.header2 > ul > li > a {
+    color: white;
+    background-color: transparent !important;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.header2 > ul > li > a:hover {
+    border: 1px solid white;
+  }
+  div.header2 div.offcanvas{
+    width: 80%;
+  }
+  /* -------------Main Container Start----------- */
+  div.main {
+    margin: 0px 0px;
+    height: 100px;
+    position: relative;
+  }
+  div.content {
+    padding: 10px;
+  }
+  div.content div.heading {
+    padding: 10px 0px;
+  }
+  div.content div.products {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  div.content div.items4 {
+    width: 100%;
+  }
+  div.content div.items4 div.items2 img {
+    width: 100%;
+    margin: 5px;
+  }
+  div.content div.items4 div.inside {
+    width: 100%;
+    margin: 5px 10px;
+  }
+  div.content a {
+    margin-top: 20px;
+  }
+  div.content div.products img {
+    width: 100%;
+  }
+  /* ------------Existing products------------- */
+
+  div.existing {
+    width: 100%;
+    background-color: #e3e6e6;
+    padding: 5px 10px;
+  }
+  div.existing div.ex-products {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  div.existing div.ex-products img {
+    box-sizing: border-box;
+    width: 35%;
+  }
+  div.signin {
+    padding: 10px;
+  }
+  footer {
+    background-color: #232f3e;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer div.listing {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  div.footer {
+    display: none;
+  }
+}
+
+.bgorange {
+  background-color: var(--bgorange) !important;
+}
+.tcenter {
+  align-items: center !important;
+}
+.lcenter {
+  justify-content: center !important;
+}
+.mright0 {
+  margin-right: 0px !important;
+}
+.mright0 {
+  margin-left: 0px !important;
+}

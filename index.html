@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body id="top">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a class="navbar-brand mright0" href="#"><img src="./images/amazonlogo1.webp" id="logo" alt="Amazon logo"></a>
+                </div>
+                <a class="navbar-brand mleft0" id="delivery" href="#">
+                    <div><i class="fa-solid fa-location-dot"></i></div>
+                    <div><span>Deliver to</span><span>Pakistan</span></div>
+                </a>
+                <!-- -------------search-bar-Start---------- -->
+
+                <div class="input-group" id="allsearch">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle square" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">All Department</button></li>
+                            <li><button class="dropdown-item" type="button">Arts & Crafts</button></li>
+                            <li><button class="dropdown-item" type="button">Automotive</button></li>
+                            <li><button class="dropdown-item" type="button">Baby</button></li>
+                            <li><button class="dropdown-item" type="button">Books</button></li>
+                            <li><button class="dropdown-item" type="button">Computers</button></li>
+                            <li><button class="dropdown-item" type="button">Deals</button></li>
+                            <li><button class="dropdown-item" type="button">Kindle Store</button></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text bgorange" id="basic-addon1"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <!-- -------------search-bar-End---------- -->
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" id="language">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle wborder" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./images/usflag.png" id="flag" alt="">EN
+                            </a>
+                            <ul class="dropdown-menu fblack fsmall">
+                                <li><a class="dropdown-item" href="#">English-EN</a></li>
+                                <li><a class="dropdown-item" href="#">Espanol-ES</a></li>
+                                <li><a class="dropdown-item" href="#">العربية - AR - الترجمة</a></li>
+                                <li><a class="dropdown-item" href="#">Deutsch-DU</a></li>
+                                <li><a class="dropdown-item" href="#">עברית - HE - תרגום</a></li>
+                                <li><a class="dropdown-item" href="#">한국어 - KO - 번역</a></li>
+                                <li><a class="dropdown-item" href="#">português - PT - Tradução</a></li>
+                                <li><a class="dropdown-item" href="#">中文 (简体) - ZH - 翻译</a></li>
+                                <li><a class="dropdown-item" href="#">中文 (繁體) - ZH - 翻譯</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="account">
+                            <a class="nav-link dropdown-toggle wborder" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div>
+                                    <span>Hello, sign in</span><br>
+                                    <span>Accounts & Lists</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown " id="account">
+                            <a class="nav-link toggle  wborder" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div>
+                                    <span>Returns</span><br>
+                                    <span>& Orders</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" id="account">
+                            <a id="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!----------------2nd-Header-Start------------->
+
+    <div class="header2">
+        <ul>
+            <li>
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <i id="bar" class="fa-solid fa-bars"></i>All
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <h4 id="leftbar" class="offcanvas-title" id="offcanvasExampleLabel"><i
+                                class="fa-solid fa-circle-user"></i>Hello, sign In</h4>
+                        <button id="closebtn" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <h3>Digital Content & Devices</h3>
+                        <ul>
+                            <li>Amazon Music</li>
+                            <li>Kindle E-reader & Books</li>
+                            <li>Amazon Appstore</li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h4>Shop by Department</h4>
+                            <li>Amazon Music</li>
+                            <li>Kindle E-reader & Books</li>
+                            <li>Amazon Appstore</li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h4>Programs & Features</h4>
+                            <li>Gift Cards</li>
+                            <li>Shop by Interest</li>
+                            <li>Amazon Live</li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+    </div>
+
+    <!----------------2nd-Header-End--------------->
+    <div class="smallscreen">
+        <a class="navbar-brand mleft0" id="delivery" href="#">
+            <div><i class="fa-solid fa-location-dot"></i></div>
+            <div><span>Deliver to</span><span>Pakistan</span></div>
+        </a> 
+    </div>
+
+    <!-- --------------Main-Container-Start-------------- -->
+
+    <div class="main">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/background1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/background2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/background3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/background4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/background5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="items4">
+            <div class="heading">
+                <h4>Gaming accessories</h4>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product1.jpg" alt="">
+                    <span>Headsets</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product2.jpg" alt="">
+                    <span>Keyboards</span>
+                </div>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product3.jpg" alt="">
+                    <span>Computer mice</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product4.jpg" alt="">
+                    <span>Chairs</span>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>New year, new supplies</h4>
+            </div>
+            <img src="./images/product1.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>Deals in PCs</h4>
+            </div>
+            <img src="./images/product2.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+        <div class="items4">
+            <div class="heading">
+                <h4>Referesh your space</h4>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product5.jpg" alt="">
+                    <span>Headsets</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product6.jpg" alt="">
+                    <span>Keyboards</span>
+                </div>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product7.jpg" alt="">
+                    <span>Computer mice</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product8.jpg" alt="">
+                    <span>Chairs</span>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>Toys under $25</h4>
+            </div>
+            <img src="./images/product3.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+        <div class="items4">
+            <div class="heading">
+                <h4>Shop deals in Fashion</h4>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product9.jpg" alt="">
+                    <span>Headsets</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product10.jpg" alt="">
+                    <span>Keyboards</span>
+                </div>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product11.jpg" alt="">
+                    <span>Computer mice</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product12.jpg" alt="">
+                    <span>Chairs</span>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>Lunar New Year</h4>
+            </div>
+            <img src="./images/product4.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+        <div class="items4">
+            <div class="heading">
+                <h4>Fashion trends you like</h4>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product13.jpg" alt="">
+                    <span>Headsets</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product14.jpg" alt="">
+                    <span>Keyboards</span>
+                </div>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product15.jpg" alt="">
+                    <span>Computer mice</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product16.jpg" alt="">
+                    <span>Chairs</span>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------Existing Products----------------- -->
+
+    <div class="existing">
+        <div class="ex-products">
+            <h3>Existing products</h3>
+            <img src="./images/existing1.jpg" alt="">
+            <img src="./images/existing2.jpg" alt="">
+            <img src="./images/existing3.jpg" alt="">
+            <img src="./images/existing4.jpg" alt="">
+            <img src="./images/existing5.jpg" alt="">
+            <img src="./images/existing6.jpg" alt="">
+            <img src="./images/existing7.jpg" alt="">
+            <img src="./images/existing8.jpg" alt="">
+            <img src="./images/existing9.jpg" alt="">
+            <img src="./images/existing10.jpg" alt="">
+            <img src="./images/existing11.jpg" alt="">
+            <img src="./images/existing12.jpg" alt="">
+            <img src="./images/existing13.jpg" alt="">
+            <img src="./images/existing14.jpg" alt="">
+        </div>
+    </div>
+    <div class="existing existing2">
+        <div class="ex-products">
+            <h3>Best Sellers in Beauty & Personal Care</h3>
+            <img src="./images/existing14.jpg" alt="">
+            <img src="./images/existing13.jpg" alt="">
+            <img src="./images/existing12.jpg" alt="">
+            <img src="./images/existing11.jpg" alt="">
+            <img src="./images/existing10.jpg" alt="">
+            <img src="./images/existing9.jpg" alt="">
+            <img src="./images/existing8.jpg" alt="">
+            <img src="./images/existing7.jpg" alt="">
+            <img src="./images/existing6.jpg" alt="">
+            <img src="./images/existing5.jpg" alt="">
+            <img src="./images/existing4.jpg" alt="">
+            <img src="./images/existing3.jpg" alt="">
+            <img src="./images/existing2.jpg" alt="">
+            <img src="./images/existing1.jpg" alt="">
+        </div>
+    </div>
+    <!-- ---------------Existing Products End-------------- -->
+    <!-- --------------Center Products start------------------ -->
+    <div class="content">
+        <div class="products">
+            <div class="heading">
+                <h4>Shop activity smartwatches</h4>
+            </div>
+            <img src="./images/product5.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+
+        <div class="items4">
+            <div class="heading">
+                <h4>Gaming merchandise</h4>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product13.jpg" alt="">
+                    <span>Headsets</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product14.jpg" alt="">
+                    <span>Keyboards</span>
+                </div>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product15.jpg" alt="">
+                    <span>Computer mice</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product16.jpg" alt="">
+                    <span>Chairs</span>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>Player's paradise starts here</h4>
+            </div>
+            <img src="./images/product6.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>A whole new way to work</h4>
+            </div>
+            <img src="./images/product7.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------Center Products end------------------ -->
+    <!-- ---------------2nd Existing Products---------------- -->
+    <div class="existing">
+        <div class="ex-products">
+            <h3>Best Seller in Books</h3>
+            <img src="./images/book1.jpg" alt="">
+            <img src="./images/book2.jpg" alt="">
+            <img src="./images/book3.jpg" alt="">
+            <img src="./images/book1.jpg" alt="">
+            <img src="./images/existing2.jpg" alt="">
+            <img src="./images/existing3.jpg" alt="">
+            <img src="./images/existing4.jpg" alt="">
+            <img src="./images/existing5.jpg" alt="">
+            <img src="./images/existing6.jpg" alt="">
+            <img src="./images/existing7.jpg" alt="">
+            <img src="./images/existing8.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="existing existing2">
+        <div class="ex-products">
+            <h3>International top sellers in Home Improvement</h3>
+            <img src="./images/bulb1.jpg" alt="">
+            <img src="./images/bulb2.jpg" alt="">
+            <img src="./images/bulb3.jpg" alt="">
+            <img src="./images/bulb4.jpg" alt="">
+            <img src="./images/bulb5.jpg" alt="">
+            <img src="./images/bulb6.jpg" alt="">
+            <img src="./images/bulb7.jpg" alt="">
+            <img src="./images/bulb8.jpg" alt="">
+            <img src="./images/bulb9.jpg" alt="">
+            <img src="./images/bulb10.jpg" alt="">
+
+        </div>
+    </div>
+
+
+    <!-- --------------Center Products start------------------ -->
+    <div class="content">
+        <div class="products">
+            <div class="heading">
+                <h4>Creating business solutions</h4>
+            </div>
+            <img src="./images/product8.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+
+        <div class="items4">
+            <div class="heading">
+                <h4>Warm & welcoming decor</h4>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product17.jpg" alt="">
+                    <span>Headsets</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product18.jpg" alt="">
+                    <span>Keyboards</span>
+                </div>
+            </div>
+            <div class="items2">
+                <div class="inside">
+                    <img src="./images/4product19.jpg" alt="">
+                    <span>Computer mice</span>
+                </div>
+                <div class="inside">
+                    <img src="./images/4product20.jpg" alt="">
+                    <span>Chairs</span>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>Personal Care under $25</h4>
+            </div>
+            <img src="./images/product9.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+        <div class="products">
+            <div class="heading">
+                <h4>Upgrade your furniture</h4>
+            </div>
+            <img src="./images/product10.jpg" alt="">
+            <a href="#">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------Center Products end------------------ -->
+
+    <div class="existing">
+        <div class="ex-products">
+            <h3>Best Seller in Sports</h3>
+            <img src="./images/gym1.jpg" alt="">
+            <img src="./images/gym2.jpg" alt="">
+            <img src="./images/gym3.jpg" alt="">
+            <img src="./images/gym4.jpg" alt="">
+            <img src="./images/gym5.jpg" alt="">
+            <img src="./images/gym6.jpg" alt="">
+            <img src="./images/gym5.jpg" alt="">
+        </div>
+    </div>
+    <div class="existing">
+        <div class="ex-products">
+            <h3>Best Seller in Toys</h3>
+            <img src="./images/toy1.jpg" alt="">
+            <img src="./images/toy2.jpg" alt="">
+            <img src="./images/toy3.jpg" alt="">
+            <img src="./images/toy4.jpg" alt="">
+            <img src="./images/toy5.jpg" alt="">
+            <img src="./images/toy6.jpg" alt="">
+            <img src="./images/toy5.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- ---------------2nd Existing Products---------------- -->
+
+    <div class="signin">
+        <span>See personalized recommendation</span>
+        <input type="button" value="Sign in">
+        <span>New Customer? <a href="#">Start here</a></span>
+    </div>
+
+
+    <!-- ---------------Signin End--------------------- -->
+
+
+    <div class="back">
+        <a href="#top">Back to top</a>
+    </div>
+
+    <footer>
+        <div class="listing">
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Amazon Devices</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul>
+        </div>
+        <div class="listing">
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="#">Sell Product on Amazon</a></li>
+                <li><a href="#">Sell on Amazon Business</a></li>
+                <li><a href="#">Sell apps on Amazon</a></li>
+                <li><a href="#">Become a affiliate</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+                <li><a href="#">Self-Publish with Us</a></li>
+                <li><a href="#">Host an Amazon Hub</a></li>
+                <li><a href="#">See More Make Money with Us</a></li>
+            </ul>
+        </div>
+        <div class="listing">
+            <h4>Amazon Payment Products</h4>
+            <ul>
+                <li><a href="#">Amazon Business Card</a></li>
+                <li><a href="#">Shop with Points</a></li>
+                <li><a href="#">Reload Your Balance</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Amazon Devices</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul>
+        </div>
+        <div class="listing">
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Amazon Devices</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer">
+        
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="last">
+                <h6>Amazon Music</h6>
+                <ul>
+                    <li><a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>Amazon Global</h6>
+                <ul>
+                    <li><a href="#">Ship Order Internationally</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h6>IMDbPro</h6>
+                <ul>
+                    <li><a href="#">Get info Entertainment Professionals Need</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/670d8593df.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
